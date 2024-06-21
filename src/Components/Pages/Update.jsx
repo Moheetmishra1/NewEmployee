@@ -31,6 +31,7 @@ export default function Update(){
 
     let updateFile = async(e)=>{
         e.preventDefault()
+        console.log(product);
 
         if(!product.name || !product.email || !product.mobile || !product.designation || !product.gender || !product.course || !product.image){
             err.current.innerHTML= "Enter All Field"
@@ -121,11 +122,11 @@ useEffect(()=>{
                 </div>
 
                 <div>
-                    <label htmlFor="designation" value={product.designation} style={{marginRight:"12px"}}>Designation</label>
-                        <select name="designation"  onChange={changeProduct}>
-                            <option   >HR</option>
-                            <option >Manager</option>
-                            <option  >sales</option>
+                    <label htmlFor="designation"  style={{marginRight:"12px"}}>Designation</label>
+                        <select name="designation"  value={product.designation} onChange={changeProduct}>
+                            <option  checked={("HR"===product.designation)}  >HR</option>
+                            <option  checked={("Manager"===product.designation)}  >Manager</option>
+                            <option  checked={("sales"===product.designation)}   >sales</option>
                         </select>
                 </div>
 
@@ -148,7 +149,7 @@ useEffect(()=>{
                 <div className="uploadImage">
 
                     <label htmlFor="imgUpload">Img Upload</label>
-                    <input type="file" name="image" id="imgUpload"  />
+                    <input type="file" name="image" id="imgUpload" onChange={changeProduct}  />
                     </div>            
 
             {/* { productType.map(a=>{

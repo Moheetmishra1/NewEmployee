@@ -117,6 +117,7 @@ export default function Home(){
                 <div>
                     <label htmlFor="designation" style={{marginRight:"12px"}}>Designation</label>
                         <select name="designation"  onClick={changeProduct}>
+                            <option   >None</option>
                             <option   >HR</option>
                             <option >Manager</option>
                             <option  >sales</option>

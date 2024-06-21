@@ -55,7 +55,14 @@ import AlertBox from "../AlertBox";
     },[])
 
 
-
+    let changeSort = ({target:{name,value}})=>{
+        setSort(value);
+            console.log(value);
+            console.log(products[0][value]);
+            console.log(Object.keys(products[0]));
+        products.sort((a,b)=>  a[value].localeCompare(b[value]))
+     console.log(products);
+    }
    
 
       let update=(id)=>{
@@ -88,15 +95,15 @@ import AlertBox from "../AlertBox";
         {showModel && <AlertBox classname="delete-message" message={`The Employee detail is deleted successfully`} /> }
         </div>
 
-        {/* <div className="sort">
-        <label htmlFor="designation" value={sortList} style={{marginRight:"12px"}}>Designation</label>
+        <div className="sort">
+        <label htmlFor="designation" value={sortList} style={{marginRight:"12px",margin:"5px"}}>Sort</label>
                         <select name="sortList"  onChange={changeSort}>
                             <option   >name</option>
                             <option >email</option>
                             <option  >id</option>
-                            <option >date</option>
+                            <option value="createDate" >createDate</option>
                         </select>
-        </div> */}
+        </div>
 
         <div className="totalCount" >
         <span className=""  style={{border:"1px solid black",margin:"0px 40px"}}>Total count:{products.length}</span>
