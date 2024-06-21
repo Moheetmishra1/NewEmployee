@@ -1,0 +1,67 @@
+ .commonButton{
+   height: 35px;
+   width: 110px;
+   font-size: 18px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   border-radius: 8%;
+   box-shadow: 1px 1px 5px black;
+ }
+
+
+ .add-message{
+   width: 130px;
+    background-color: rgb(216, 44, 216);
+ }
+
+ .add-message:hover{
+    color: black;
+    background-color: aqua;
+ }
+
+ .view{
+   background-color: blue;
+   color: black;
+ }
+
+ 
+.UpdateButtom{
+  background-color: #4db2e0;
+  font-size: 20px;
+ 
+  text-shadow: 1px 1px 1px;
+}
+
+.delete-message{
+  background-color: red;
+}
+
+.createAccount{
+  background-color: rgb(28, 224, 175);
+  width: 200px;
+  height:40px;
+  padding: 2px;
+  
+  border-end-end-radius: 100px;
+  border-start-end-radius: 100px;
+  border-start-start-radius: 100px;
+  border-end-start-radius: 100px;
+}
+
+.createAccount:hover{
+  background-color: chartreuse;
+  color: white;
+}
+
+.login-buttom{
+  width: 200px;
+  border-start-start-radius: 50px;
+  border-start-end-radius: 50px;
+  border-end-start-radius: 50px;
+  border-end-end-radius: 50px;
+  margin-top:-10px ;
+  background-color: #fd6b6b;
+}
+.login-buttom:hover{
+  background-color: greenyellow;
+}

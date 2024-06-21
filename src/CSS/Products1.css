@@ -1,0 +1,79 @@
+.updateWall{
+    height: 100vh;
+    background-color: white;
+}
+.divProducts{
+    /* height: 150px; */
+    width: 95%;
+    background-color: whitesmoke;
+    /* color: greenyellow; */
+    font-size:larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+    border-radius: 5%;
+    /* padding-left: 20px; */
+
+}
+
+imageProducts{
+    height: 100px;
+    width: 100px;
+    border-radius: 50% ;
+}
+
+.divProducts table{
+    width: 50%;
+}
+.divProducts table thead{
+    width: 100%;
+    background-color: skyblue;
+
+}
+
+.divProducts tr{
+    border: 1px solid black;
+    margin: 2px 2px;
+    align-items: center;
+}
+
+.divProducts td,.divProducts th{
+    /* width: 20px; */
+    padding: 1% 6px;
+}
+
+.employeesList{
+    height: 50px;
+    background-color: yellow;
+    margin-top: -35px;
+    font-size: 30px;
+}
+
+.totalCount{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    left: 60%;
+}
+
+.totalCount button{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(33, 231, 165);
+    font-size: 20px;
+}
+
+.searchText{
+    position: relative; 
+    left: 60%;
+    font-size: 20px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
